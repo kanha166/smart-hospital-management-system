@@ -1,0 +1,469 @@
+/* =========================================================
+   DOCTOR TOPBAR
+   ========================================================= */
+
+.doctor-topbar {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 25px;
+
+    margin: 25px 0 30px;
+
+    padding: 20px 28px;
+
+    border-radius: 24px;
+
+    background: rgba(255, 255, 255, .08);
+
+    backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255, 255, 255, .15);
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, .18);
+
+}
+
+
+/* =========================================================
+   TOPBAR LEFT
+   ========================================================= */
+
+.doctor-topbar-left {
+
+    flex: 1;
+
+    min-width: 0;
+
+}
+
+
+.doctor-topbar-left h2 {
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+}
+
+
+.doctor-topbar-left p {
+
+    margin: 6px 0 0;
+
+    color: #d1d5db;
+
+    font-size: 15px;
+
+}
+
+
+.doctor-topbar-left span {
+
+    margin-left: 4px;
+
+    color: #60a5fa;
+
+    font-weight: 600;
+
+}
+
+
+/* =========================================================
+   TOPBAR RIGHT
+   ========================================================= */
+
+.doctor-topbar-right {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 18px;
+
+    flex-shrink: 0;
+
+}
+
+
+/* =========================================================
+   SEARCH BOX
+   ========================================================= */
+
+.doctor-search-box {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    width: 320px;
+
+    box-sizing: border-box;
+
+    padding: 12px 18px;
+
+    border-radius: 16px;
+
+    background: rgba(255, 255, 255, .08);
+
+    border: 1px solid rgba(255, 255, 255, .08);
+
+    color: #ffffff;
+
+    backdrop-filter: blur(18px);
+
+}
+
+
+.doctor-search-box svg {
+
+    flex-shrink: 0;
+
+    font-size: 18px;
+
+    color: #cbd5e1;
+
+}
+
+
+.doctor-search-box input {
+
+    width: 100%;
+
+    flex: 1;
+
+    min-width: 0;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+}
+
+
+.doctor-search-box input::placeholder {
+
+    color: #cbd5e1;
+
+}
+
+
+/* =========================================================
+   TOPBAR ICON
+   ========================================================= */
+
+.doctor-topbar-icon {
+
+    width: 48px;
+
+    height: 48px;
+
+    flex-shrink: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    cursor: pointer;
+
+    background: rgba(255, 255, 255, .08);
+
+    color: white;
+
+    font-size: 20px;
+
+    transition: .3s;
+
+}
+
+
+.doctor-topbar-icon:hover {
+
+    background: #2563eb;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(37, 99, 235, .45);
+
+}
+
+
+/* =========================================================
+   USER CARD
+   ========================================================= */
+
+.doctor-user-card {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 10px 16px;
+
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, .08);
+
+    border: 1px solid rgba(255, 255, 255, .08);
+
+    white-space: nowrap;
+
+}
+
+
+/* =========================================================
+   AVATAR
+   ========================================================= */
+
+.doctor-avatar {
+
+    width: 48px;
+
+    height: 48px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #3b82f6,
+            #06b6d4
+        );
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================================
+   USER NAME
+   ========================================================= */
+
+.doctor-user-card h4 {
+
+    margin: 0;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+}
+
+
+.doctor-user-card span {
+
+    color: #cbd5e1;
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   LARGE SCREEN
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+    .doctor-search-box {
+
+        width: 260px;
+
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 992px) {
+
+    .doctor-topbar {
+
+        gap: 18px;
+
+    }
+
+
+    .doctor-search-box {
+
+        width: 220px;
+
+    }
+
+
+    .doctor-topbar-right {
+
+        gap: 12px;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .doctor-topbar {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 18px;
+
+    }
+
+
+    .doctor-topbar-left {
+
+        width: 100%;
+
+    }
+
+
+    .doctor-topbar-right {
+
+        width: 100%;
+
+        justify-content: space-between;
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .doctor-search-box {
+
+        order: 5;
+
+        width: 100%;
+
+        flex: 1 0 100%;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .doctor-topbar {
+
+        margin: 15px 0 20px;
+
+        padding: 18px;
+
+    }
+
+
+    .doctor-topbar-left h2 {
+
+        font-size: 26px;
+
+    }
+
+
+    .doctor-topbar-right {
+
+        gap: 10px;
+
+    }
+
+
+    .doctor-user-card {
+
+        padding: 8px 12px;
+
+    }
+
+
+    .doctor-user-card > div:last-child {
+
+        display: none;
+
+    }
+
+
+    .doctor-avatar {
+
+        width: 44px;
+
+        height: 44px;
+
+        font-size: 18px;
+
+    }
+
+
+    .doctor-topbar-icon {
+
+        width: 44px;
+
+        height: 44px;
+
+    }
+
+
+    .doctor-search-box {
+
+        width: 100%;
+
+    }
+
+}

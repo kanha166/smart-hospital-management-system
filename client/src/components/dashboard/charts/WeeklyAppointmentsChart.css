@@ -1,0 +1,39 @@
+/* File: src/components/dashboard/charts/WeeklyAppointmentsChart.css */
+
+.chart-card{
+
+    padding:24px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:0 12px 35px rgba(0,0,0,.18);
+
+    transition:.35s ease;
+
+}
+
+.chart-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.28);
+
+}
+
+.chart-card h3{
+
+    margin-bottom:20px;
+
+    color:#ffffff;
+
+    font-size:22px;
+
+    font-weight:600;
+
+}

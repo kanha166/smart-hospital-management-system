@@ -1,0 +1,67 @@
+.quick-actions{
+
+    padding:24px;
+
+}
+
+.quick-actions h3{
+
+    color:#fff;
+
+    margin-bottom:20px;
+
+}
+
+.quick-action-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:16px;
+
+}
+
+.quick-action-grid button{
+
+    border:none;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    cursor:pointer;
+
+    background:rgba(255,255,255,.08);
+
+    color:#fff;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-size:28px;
+
+    transition:.3s;
+
+}
+
+.quick-action-grid button span{
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.quick-action-grid button:hover{
+
+    background:#2563eb;
+
+    transform:translateY(-5px);
+
+}

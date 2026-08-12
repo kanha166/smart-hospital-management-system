@@ -1,0 +1,57 @@
+.dashboard-widget{
+
+    padding:24px;
+
+    border-radius:22px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+}
+
+.dashboard-widget h3{
+
+    color:#fff;
+
+    margin-bottom:20px;
+
+}
+
+.dept-row{
+
+    display:grid;
+
+    grid-template-columns:120px 1fr 40px;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:18px;
+
+    color:#fff;
+
+}
+
+.dept-progress{
+
+    height:8px;
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+.dept-fill{
+
+    height:100%;
+
+    background:#3b82f6;
+
+}

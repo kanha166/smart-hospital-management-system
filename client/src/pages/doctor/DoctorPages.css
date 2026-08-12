@@ -1,0 +1,870 @@
+/* =========================================================
+   DOCTOR PAGE
+========================================================= */
+
+.doctor-page {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 24px;
+
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.doctor-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+
+    padding: 20px 25px;
+
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    backdrop-filter: blur(18px);
+
+    -webkit-backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+
+}
+
+
+.doctor-header h1 {
+
+    color: #fff;
+
+    margin: 0 0 6px;
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+}
+
+
+.doctor-header p {
+
+    color: rgba(255, 255, 255, 0.75);
+
+    margin: 0;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================================
+   CARDS
+========================================================= */
+
+.doctor-card {
+
+    background: rgba(255, 255, 255, 0.08);
+
+    backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 22px;
+
+    padding: 30px;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+
+    overflow: hidden;
+
+}
+
+
+.doctor-card h2 {
+
+    color: #fff;
+
+    margin-bottom: 20px;
+
+}
+
+
+.doctor-card h3 {
+
+    color: #fff;
+
+    margin-bottom: 10px;
+
+}
+
+
+.doctor-card p {
+
+    color: #cbd5e1;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.doctor-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(260px, 1fr)
+    );
+
+    gap: 24px;
+
+}
+
+
+/* =========================================================
+   BOOKING BADGES
+========================================================= */
+
+.booking-badge {
+
+    display: inline-block;
+
+    min-width: 120px;
+
+    text-align: center;
+
+    padding: 6px 14px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+
+.patient-booking {
+
+    background: #ffc107;
+
+    color: #000;
+
+}
+
+
+.admin-booking {
+
+    background: #0d6efd;
+
+    color: #fff;
+
+}
+
+
+/* =========================================================
+   STATUS BADGES
+========================================================= */
+
+.appointment-table .status {
+
+    display: inline-block;
+
+    min-width: 95px;
+
+    text-align: center;
+
+    padding: 6px 14px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+}
+
+
+.appointment-table .status.scheduled {
+
+    background: #0d6efd;
+
+    color: #fff;
+
+}
+
+
+.appointment-table .status.pending {
+
+    background: #ffc107;
+
+    color: #000;
+
+}
+
+
+.appointment-table .status.completed {
+
+    background: #198754;
+
+    color: #fff;
+
+}
+
+
+.appointment-table .status.cancelled {
+
+    background: #dc3545;
+
+    color: #fff;
+
+}
+
+
+.appointment-table .status.rejected {
+
+    background: #dc3545;
+
+    color: #fff;
+
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.actions {
+
+    display: flex;
+
+    gap: 10px;
+
+}
+
+
+.actions button {
+
+    min-width: 70px;
+
+    height: 38px;
+
+    padding: 0 14px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    color: #fff;
+
+    transition: 0.3s;
+
+}
+
+
+.actions button:hover {
+
+    background: #2563eb;
+
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.doctor-small-btn {
+
+    padding: 8px 18px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #2563eb;
+
+    color: #fff;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.doctor-small-btn:hover {
+
+    background: #1d4ed8;
+
+}
+
+
+.doctor-small-btn:disabled {
+
+    opacity: 0.6;
+
+    cursor: not-allowed;
+
+}
+
+
+.reject-btn {
+
+    background: #dc3545;
+
+}
+
+
+.reject-btn:hover {
+
+    background: #b02a37;
+
+}
+
+
+.doctor-action-btn {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #2563eb;
+
+    color: #fff;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.doctor-action-btn:hover {
+
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* =========================================================
+   FORMS
+========================================================= */
+
+.doctor-form-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 20px;
+
+}
+
+
+.doctor-form-group label {
+
+    color: #fff;
+
+    margin-bottom: 8px;
+
+    font-weight: 600;
+
+}
+
+
+.doctor-form-group input,
+.doctor-form-group select,
+.doctor-form-group textarea {
+
+    padding: 14px 16px;
+
+    border-radius: 12px;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    background: rgba(255, 255, 255, 0.08);
+
+    color: #fff;
+
+    outline: none;
+
+}
+
+
+.doctor-form-group input:focus,
+.doctor-form-group select:focus,
+.doctor-form-group textarea:focus {
+
+    border-color: #3b82f6;
+
+}
+
+
+.doctor-form-group textarea {
+
+    resize: none;
+
+    min-height: 120px;
+
+}
+
+
+.doctor-form-row {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+}
+
+
+.doctor-form-group select option {
+
+    color: #000;
+
+    background: #fff;
+
+}
+
+
+/* =========================================================
+   MODAL OVERLAY
+========================================================= */
+
+.doctor-modal-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.65);
+
+    backdrop-filter: blur(5px);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    z-index: 1000;
+
+}
+
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+.doctor-modal {
+
+    width: 850px;
+
+    max-width: 100%;
+
+    max-height: 90vh;
+
+    background: rgba(15, 23, 42, 0.97);
+
+    backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 18px;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+
+    overflow: hidden;
+
+    color: #fff;
+
+}
+
+
+/* =========================================================
+   MODAL HEADER
+========================================================= */
+
+.doctor-modal-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 20px 24px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+
+
+.doctor-modal-header h2 {
+
+    margin: 0;
+
+    color: #fff;
+
+    font-size: 22px;
+
+}
+
+
+.doctor-modal-close {
+
+    width: 36px;
+
+    height: 36px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    color: #fff;
+
+    font-size: 24px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.doctor-modal-close:hover {
+
+    background: rgba(255, 255, 255, 0.18);
+
+}
+
+
+/* =========================================================
+   MODAL BODY
+========================================================= */
+
+.doctor-modal-body {
+
+    padding: 24px;
+
+    max-height: 60vh;
+
+    overflow-y: auto;
+
+}
+
+
+.doctor-modal-body p {
+
+    color: #cbd5e1;
+
+    margin: 0 0 14px;
+
+}
+
+
+.doctor-modal-body strong {
+
+    color: #fff;
+
+}
+
+
+/* =========================================================
+   APPOINTMENT GRID
+========================================================= */
+
+.appointment-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+
+}
+
+
+.appointment-grid > div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+    padding: 14px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    border-radius: 12px;
+
+}
+
+
+.appointment-grid strong {
+
+    color: #93c5fd;
+
+    font-size: 13px;
+
+}
+
+
+.appointment-grid span {
+
+    color: #fff;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    word-break: break-word;
+
+}
+
+
+/* =========================================================
+   MODAL FORM
+========================================================= */
+
+.doctor-modal .doctor-form-group {
+
+    margin-top: 20px;
+
+}
+
+
+.doctor-modal .doctor-form-group label {
+
+    color: #fff;
+
+}
+
+
+.doctor-modal .doctor-form-group input,
+.doctor-modal .doctor-form-group select,
+.doctor-modal .doctor-form-group textarea {
+
+    background: rgba(255, 255, 255, 0.08);
+
+    color: #fff;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+}
+
+
+.doctor-modal .doctor-form-group input:focus,
+.doctor-modal .doctor-form-group select:focus,
+.doctor-modal .doctor-form-group textarea:focus {
+
+    border-color: #3b82f6;
+
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
+
+}
+
+
+/* =========================================================
+   CURRENT STATUS
+========================================================= */
+
+.appointment-current-status {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 14px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    border-radius: 12px;
+
+}
+
+
+.appointment-current-status strong {
+
+    color: #fff;
+
+}
+
+
+/* =========================================================
+   MODAL ERROR
+========================================================= */
+
+.doctor-error {
+
+    margin-top: 15px;
+
+    padding: 10px 12px;
+
+    border-radius: 8px;
+
+    background: rgba(239, 68, 68, 0.12);
+
+    border: 1px solid rgba(239, 68, 68, 0.2);
+
+    color: #f87171 !important;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================================
+   MODAL FOOTER
+========================================================= */
+
+.doctor-modal-footer {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 16px 24px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    background: rgba(15, 23, 42, 0);
+
+    flex-wrap: wrap;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .doctor-page {
+
+        padding: 0 15px;
+
+    }
+
+
+    .doctor-header {
+
+        padding: 18px 20px;
+
+    }
+
+
+    .doctor-header h1 {
+
+        font-size: 24px;
+
+    }
+
+
+    .doctor-form-row {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .appointment-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .doctor-table-card {
+
+        padding: 20px;
+
+    }
+
+
+    .appointment-table {
+
+        min-width: 900px;
+
+    }
+
+
+    .doctor-modal {
+
+        max-height: 95vh;
+
+    }
+
+
+    .doctor-modal-body {
+
+        max-height: 65vh;
+
+    }
+
+
+    .doctor-modal-footer {
+
+        justify-content: stretch;
+
+    }
+
+
+    .doctor-modal-footer .doctor-small-btn {
+
+        flex: 1;
+
+    }
+
+}

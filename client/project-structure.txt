@@ -1,0 +1,117 @@
+.
+├── eslint.config.js
+├── .gitignore
+├── index.html
+├── package.json
+├── package-lock.json
+├── project-structure.txt
+├── public
+│   ├── favicon.svg
+│   └── icons.svg
+├── README.md
+├── src
+│   ├── api
+│   │   ├── authApi.js
+│   │   ├── axios.js
+│   │   └── patientApi.js
+│   ├── App.css
+│   ├── App.jsx
+│   ├── assets
+│   │   ├── hero.png
+│   │   ├── images
+│   │   │   ├── hospital-bg.png
+│   │   │   └── inside.png
+│   │   ├── react.svg
+│   │   └── vite.svg
+│   ├── components
+│   │   ├── admin
+│   │   │   ├── appointments
+│   │   │   ├── doctors
+│   │   │   ├── patients
+│   │   │   ├── pharmacy
+│   │   │   ├── reports
+│   │   │   └── settings
+│   │   ├── auth
+│   │   │   ├── AuthInput.jsx
+│   │   │   ├── AuthLayout.css
+│   │   │   ├── AuthLayout.jsx
+│   │   │   ├── LoginForm.css
+│   │   │   ├── LoginForm.jsx
+│   │   │   ├── PrimaryButton.jsx
+│   │   │   ├── RegisterForm.css
+│   │   │   └── RegisterForm.jsx
+│   │   ├── cards
+│   │   ├── common
+│   │   │   ├── ProtectedRoute.jsx
+│   │   │   └── SearchBar.css
+│   │   ├── dashboard
+│   │   │   ├── AdminSidebar.jsx
+│   │   │   ├── cards
+│   │   │   ├── charts
+│   │   │   ├── DoctorSidebar.jsx
+│   │   │   ├── PatientSidebar.jsx
+│   │   │   ├── Sidebar.css
+│   │   │   ├── Sidebar.jsx
+│   │   │   ├── Topbar.css
+│   │   │   └── Topbar.jsx
+│   │   ├── forms
+│   │   ├── layout
+│   │   └── tables
+│   ├── context
+│   │   ├── AuthContext.js
+│   │   └── AuthProvider.jsx
+│   ├── hooks
+│   │   └── useAuth.js
+│   ├── layouts
+│   │   ├── DashboardLayout.css
+│   │   └── DashboardLayout.jsx
+│   ├── main.jsx
+│   ├── pages
+│   │   ├── admin
+│   │   │   ├── Appointments.css
+│   │   │   ├── Appointments.jsx
+│   │   │   ├── DashboardHome.css
+│   │   │   ├── DashboardHome.jsx
+│   │   │   ├── Doctors.css
+│   │   │   ├── Doctors.jsx
+│   │   │   ├── Patients.css
+│   │   │   ├── Patients.jsx
+│   │   │   ├── Pharmacy.css
+│   │   │   ├── Pharmacy.jsx
+│   │   │   ├── Reports.css
+│   │   │   ├── Reports.jsx
+│   │   │   ├── Settings.css
+│   │   │   └── Settings.jsx
+│   │   ├── appointments
+│   │   ├── auth
+│   │   │   ├── Login.css
+│   │   │   └── Login.jsx
+│   │   ├── consultations
+│   │   ├── dashboard
+│   │   ├── departments
+│   │   ├── doctor
+│   │   │   ├── DashboardHome.css
+│   │   │   └── DashboardHome.jsx
+│   │   ├── invoices
+│   │   ├── labReports
+│   │   ├── medicalRecords
+│   │   ├── patient
+│   │   │   ├── CompleteProfile.css
+│   │   │   ├── CompleteProfile.jsx
+│   │   │   ├── DashboardHome.css
+│   │   │   └── DashboardHome.jsx
+│   │   ├── pharmacy
+│   │   └── profile
+│   ├── routes
+│   │   └── AppRoutes.jsx
+│   ├── services
+│   ├── styles
+│   │   ├── auth.css
+│   │   ├── components.css
+│   │   ├── global.css
+│   │   ├── theme.css
+│   │   └── variables.css
+│   └── utils
+└── vite.config.js
+
+44 directories, 71 files

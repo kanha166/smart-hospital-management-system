@@ -1,0 +1,15 @@
+.recent-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.recent-table th,
+.recent-table td{
+    padding:14px;
+    color:#fff;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.recent-table th{
+    color:#93c5fd;
+}

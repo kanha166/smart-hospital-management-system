@@ -1,0 +1,121 @@
+.report-table-wrapper{
+
+    overflow-x:auto;
+
+}
+
+.report-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+.report-table th{
+
+    background:rgba(255,255,255,.08);
+
+    color:#fff;
+
+    padding:16px;
+
+    text-align:left;
+
+}
+
+.report-table td{
+
+    padding:16px;
+
+    color:#fff;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.report-table tr:hover{
+
+    background:rgba(255,255,255,.05);
+
+}
+
+.actions{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.actions button{
+
+    width:38px;
+
+    height:38px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    background:rgba(255,255,255,.15);
+
+    color:#fff;
+
+    transition:.3s;
+
+}
+
+.actions button:hover{
+
+    background:#2563eb;
+
+}
+
+/* Result */
+
+.result{
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.result.normal{
+
+    background:#198754;
+
+    color:#fff;
+
+}
+
+.result.abnormal{
+
+    background:#ffc107;
+
+    color:#000;
+
+}
+
+.result.critical{
+
+    background:#dc3545;
+
+    color:#fff;
+
+}

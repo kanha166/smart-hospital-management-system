@@ -1,0 +1,116 @@
+.login-page{
+
+    display:flex;
+
+    min-height:100vh;
+
+}
+
+.login-left{
+
+    width:40%;
+
+    background:linear-gradient(
+        135deg,
+        #2563EB,
+        #1E40AF
+    );
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:50px;
+
+}
+
+.login-left h1{
+
+    font-size:44px;
+
+    font-weight:700;
+
+}
+
+.login-left p{
+
+    font-size:18px;
+
+    margin-top:15px;
+
+    opacity:.9;
+
+}
+
+.login-right{
+
+    width:60%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#F5F7FB;
+
+}
+
+.login-card{
+
+    width:420px;
+
+    background:white;
+
+    padding:45px;
+
+    border-radius:18px;
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.08);
+
+}
+
+.subtitle{
+
+    color:#64748B;
+
+    margin-bottom:30px;
+
+}
+
+.form-control{
+
+    height:48px;
+
+    border-radius:10px;
+
+}
+
+.btn-primary{
+
+    height:48px;
+
+    border-radius:10px;
+
+}
+
+@media(max-width:992px){
+
+.login-left{
+
+display:none;
+
+}
+
+.login-right{
+
+width:100%;
+
+}
+
+}

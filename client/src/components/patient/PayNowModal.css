@@ -1,0 +1,407 @@
+/* File: client/src/components/patient/PayNowModal.css */
+
+.patient-modal-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 9999;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    backdrop-filter: blur(4px);
+
+}
+
+
+/* ==========================================
+   PAY NOW MODAL
+========================================== */
+
+.pay-now-modal {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    backdrop-filter: blur(18px);
+
+    color: #fff;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.pay-now-header {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+
+}
+
+.pay-now-header h2 {
+
+    margin: 0 0 6px;
+
+    color: #fff;
+
+    font-size: 24px;
+
+}
+
+.pay-now-header p {
+
+    margin: 0;
+
+    color: #ddd;
+
+    font-size: 14px;
+
+}
+
+
+/* ==========================================
+   CLOSE BUTTON
+========================================== */
+
+.pay-now-close {
+
+    width: 34px;
+
+    height: 34px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    color: #fff;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+
+}
+
+.pay-now-close:hover {
+
+    background: rgba(255, 255, 255, 0.15);
+
+}
+
+
+/* ==========================================
+   PAYMENT SUMMARY
+========================================== */
+
+.payment-summary {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 14px;
+
+    margin-bottom: 24px;
+
+}
+
+.payment-summary > div {
+
+    padding: 16px;
+
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+}
+
+.payment-summary span {
+
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #ddd;
+
+    font-size: 13px;
+
+}
+
+.payment-summary strong {
+
+    display: block;
+
+    color: #fff;
+
+    font-size: 18px;
+
+}
+
+.payment-summary .payment-amount {
+
+    color: #60a5fa;
+
+}
+
+
+/* ==========================================
+   ERROR
+========================================== */
+
+.payment-error {
+
+    margin-bottom: 18px;
+
+    padding: 11px 14px;
+
+    border-radius: 8px;
+
+    background: rgba(239, 68, 68, 0.12);
+
+    border: 1px solid rgba(239, 68, 68, 0.25);
+
+    color: #fca5a5;
+
+    font-size: 14px;
+
+}
+
+
+/* ==========================================
+   PAYMENT FORM
+========================================== */
+
+.payment-form {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.payment-form label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #fff;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+}
+
+.payment-form select {
+
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 9px;
+
+    outline: none;
+
+    background: #1e293b;
+
+    color: #fff;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+}
+
+.payment-form select:focus {
+
+    border-color: #3b82f6;
+
+}
+
+
+/* ==========================================
+   PAYMENT INFORMATION
+========================================== */
+
+.payment-info {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 18px;
+
+    padding: 12px;
+
+    border-radius: 9px;
+
+    background: rgba(37, 99, 235, 0.08);
+
+    border: 1px solid rgba(37, 99, 235, 0.12);
+
+}
+
+.payment-info span {
+
+    font-size: 18px;
+
+}
+
+.payment-info p {
+
+    margin: 0;
+
+    color: #94a3b8;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+}
+
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.payment-modal-buttons {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    margin-top: 25px;
+
+}
+
+.payment-cancel-btn,
+.payment-submit-btn {
+
+    border: none;
+
+    border-radius: 8px;
+
+    padding: 11px 18px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+
+}
+
+.payment-cancel-btn {
+
+    background: rgba(255, 255, 255, 0.08);
+
+    color: #cbd5e1;
+
+}
+
+.payment-cancel-btn:hover {
+
+    background: rgba(255, 255, 255, 0.14);
+
+}
+
+.payment-submit-btn {
+
+    background: #2563eb;
+
+    color: #fff;
+
+}
+
+.payment-submit-btn:hover {
+
+    background: #1d4ed8;
+
+}
+
+.payment-submit-btn:disabled,
+.payment-cancel-btn:disabled {
+
+    opacity: 0.6;
+
+    cursor: not-allowed;
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+
+    .pay-now-modal {
+
+        padding: 22px;
+
+    }
+
+    .payment-summary {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .payment-modal-buttons {
+
+        flex-direction: column-reverse;
+
+    }
+
+    .payment-cancel-btn,
+    .payment-submit-btn {
+
+        width: 100%;
+
+    }
+
+}

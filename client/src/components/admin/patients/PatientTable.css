@@ -1,0 +1,83 @@
+.patient-table-wrapper{
+
+    overflow-x:auto;
+
+}
+
+.patient-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+.patient-table th{
+
+    background:rgba(255,255,255,.08) !important;
+
+    color:#fff !important;
+
+    padding:16px;
+
+    text-align:left;
+
+}
+
+.patient-table td{
+
+    padding:16px;
+
+    color:#fff;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.patient-table tr:hover{
+
+    background:rgba(255,255,255,.05);
+
+}
+
+.actions{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.actions button{
+
+    width:38px;
+
+    height:38px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    background:rgba(255,255,255,.15);
+
+    color:#fff;
+
+    transition:.3s;
+
+}
+
+.actions button:hover{
+
+    background:#2563eb;
+
+}

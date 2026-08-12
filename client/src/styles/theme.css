@@ -1,0 +1,115 @@
+:root{
+    --app-accent:#0d6efd;
+    --app-bg-start:#0f172a;
+    --app-bg-end:#111827;
+    --app-text:#ffffff;
+    --app-text-muted:rgba(255,255,255,.75);
+    --app-glass:rgba(255,255,255,.12);
+    --app-border:rgba(255,255,255,.18);
+}
+
+html[data-theme="light"]{
+    --app-bg-start:#e5eefc;
+    --app-bg-end:#cfdcff;
+    --app-text:#0f172a;
+    --app-text-muted:rgba(15,23,42,.75);
+    --app-glass:rgba(255,255,255,.55);
+    --app-border:rgba(15,23,42,.12);
+}
+
+html[data-theme="dark"]{
+    --app-bg-start:#0f172a;
+    --app-bg-end:#111827;
+    --app-text:#ffffff;
+    --app-text-muted:rgba(255,255,255,.75);
+    --app-glass:rgba(255,255,255,.12);
+    --app-border:rgba(255,255,255,.18);
+}
+
+body{
+    background:linear-gradient(135deg,var(--app-bg-start),var(--app-bg-end));
+    color:var(--app-text);
+    transition:background .25s ease,color .25s ease;
+}
+
+/* Common accent buttons used across the dashboard */
+.save-btn,
+.save-settings-btn,
+.add-patient-btn,
+.add-doctor-btn,
+.add-appointment-btn,
+.add-medicine-btn,
+.add-report-btn{
+    background:var(--app-accent) !important;
+    color:#fff !important;
+}
+
+.save-btn:hover,
+.save-settings-btn:hover,
+.add-patient-btn:hover,
+.add-doctor-btn:hover,
+.add-appointment-btn:hover,
+.add-medicine-btn:hover,
+.add-report-btn:hover{
+    filter:brightness(.92);
+    transform:translateY(-2px);
+}
+
+/* Generic glass surfaces */
+.patients-header,
+.doctors-header,
+.appointments-header,
+.pharmacy-header,
+.reports-header,
+.settings-header,
+.patient-table-wrapper,
+.doctor-table-wrapper,
+.appointment-table-wrapper,
+.medicine-table-wrapper,
+.report-table-wrapper,
+.settings-card{
+    background:var(--app-glass);
+    border-color:var(--app-border);
+}
+
+/* Text */
+
+h1,h2,h3,h4,h5,h6{
+    color:var(--app-text);
+}
+
+p,label,span{
+    color:var(--app-text);
+}
+
+/* Inputs */
+
+input,
+textarea,
+select{
+
+    color:var(--app-text);
+
+    border-color:var(--app-border);
+
+}
+
+/* Glass cards */
+
+.glass-panel,
+.patient-modal,
+.doctor-modal,
+.appointment-modal,
+.medicine-modal,
+.report-modal,
+.view-patient-modal,
+.view-doctor-modal,
+.view-appointment-modal,
+.view-medicine-modal,
+.view-report-modal{
+
+    background:var(--app-glass);
+
+    border:1px solid var(--app-border);
+
+}

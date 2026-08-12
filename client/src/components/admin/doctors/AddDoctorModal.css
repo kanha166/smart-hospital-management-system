@@ -1,0 +1,252 @@
+/* File: src/components/admin/doctors/AddDoctorModal.css */
+
+.modal-overlay{
+
+    position:fixed;
+    inset:0;
+
+    background:rgba(0,0,0,.6);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    z-index:1000;
+
+}
+
+.doctor-modal{
+
+    width:850px;
+
+    max-width:95%;
+
+    max-height:90vh;
+
+    overflow-y: scroll !important;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    color:#fff;
+
+}
+
+.doctor-modal h2{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+}
+
+.doctor-form-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:18px 24px;
+
+}
+
+.doctor-form-grid label{
+
+    display:block;
+
+    margin-bottom:6px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.doctor-form-grid input,
+.doctor-form-grid select,
+.doctor-form-grid textarea{
+
+    width:100%;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    background:rgba(255,255,255,.12);
+
+    color:#fff;
+
+    outline:none;
+
+    transition:.25s;
+
+}
+
+.doctor-form-grid input:focus,
+.doctor-form-grid select:focus,
+.doctor-form-grid textarea:focus{
+
+    border-color:#4fa3ff;
+
+    box-shadow:0 0 0 3px rgba(79,163,255,.18);
+
+}
+
+.doctor-form-grid textarea{
+
+    min-height:110px;
+
+    resize:none;
+
+}
+
+.doctor-form-grid select option{
+
+    color:#000;
+
+}
+
+.phone-group{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.phone-group span{
+
+    padding:12px 14px;
+
+    background:rgba(255,255,255,.12);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-right:none;
+
+    border-radius:10px 0 0 10px;
+
+    color:#fff;
+
+    white-space:nowrap;
+
+}
+
+.phone-group input{
+
+    border-radius:0 10px 10px 0 !important;
+
+}
+
+.validation-error{
+
+    display:block;
+
+    margin-top:6px;
+
+    color:#ff7b7b;
+
+    font-size:12px;
+
+    font-weight:500;
+
+}
+
+.profile-preview{
+
+    width:120px;
+
+    height:120px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    border:2px solid rgba(255,255,255,.25);
+
+    margin-top:10px;
+
+}
+
+.modal-buttons{
+
+    display:flex;
+
+    gap:16px;
+
+    margin-top:30px;
+
+}
+
+.modal-buttons button{
+
+    flex:1;
+
+    padding:13px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#fff;
+
+    transition:.25s;
+
+}
+
+.save-btn{
+
+    background:#2563eb;
+
+}
+
+.save-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+.cancel-btn{
+
+    background:#dc2626;
+
+}
+
+.cancel-btn:hover{
+
+    background:#b91c1c;
+
+}
+
+@media(max-width:768px){
+
+    .doctor-modal{
+
+        width:95%;
+
+        padding:20px;
+
+    }
+
+    .doctor-form-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

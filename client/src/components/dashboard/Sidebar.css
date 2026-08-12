@@ -1,0 +1,137 @@
+/* File: src/components/dashboard/Sidebar.css */
+
+.sidebar{
+
+    width:280px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    padding:25px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border-right:1px solid rgba(255,255,255,.15);
+
+    box-shadow:0 0 40px rgba(0,0,0,.25);
+
+}
+
+.sidebar-logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    color:white;
+
+    margin-bottom:45px;
+
+}
+
+.sidebar-logo h3{
+
+    margin:0;
+
+    font-size:22px;
+
+    font-weight:700;
+
+}
+
+.sidebar-logo span{
+
+    font-size:13px;
+
+    color:#cbd5e1;
+
+}
+
+.sidebar-menu{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.sidebar-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    width:100%;
+
+    border:none;
+
+    background:transparent;
+
+    color:white;
+
+    padding:14px 18px;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    text-decoration: none;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+.sidebar-item:hover{
+
+    background:rgba(255,255,255,.12);
+
+    transform:translateX(6px);
+
+}
+
+.sidebar-item.active{
+
+    background:linear-gradient(
+        135deg,
+        #3b82f6,
+        #06b6d4
+    );
+
+    box-shadow:0 10px 25px rgba(59,130,246,.45);
+
+}
+
+.logout-btn{
+
+    margin-top:30px;
+
+    color:#ffb4b4;
+
+}
+
+.logout-btn:hover{
+
+    background:rgba(255,0,0,.18);
+
+}

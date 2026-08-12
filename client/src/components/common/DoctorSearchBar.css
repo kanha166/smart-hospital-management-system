@@ -1,0 +1,56 @@
+/* =========================================================
+   DOCTOR SEARCH BAR
+========================================================= */
+
+.doctor-search-bar {
+
+    width: 100%;
+
+    margin-bottom: 25px;
+
+}
+
+.doctor-search-bar input {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 14px 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 14px;
+
+    outline: none;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    backdrop-filter: blur(14px);
+
+    -webkit-backdrop-filter: blur(14px);
+
+    color: #fff;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+
+}
+
+.doctor-search-bar input::placeholder {
+
+    color: rgba(255, 255, 255, 0.65);
+
+}
+
+.doctor-search-bar input:focus {
+
+    border-color: #3b82f6;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    box-shadow:
+        0 0 0 3px rgba(59, 130, 246, 0.12);
+
+}

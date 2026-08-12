@@ -1,0 +1,261 @@
+/* File: client/src/components/patient/ViewBillingModal.css */
+
+.view-billing-modal{
+
+    width:700px;
+
+    max-width:95%;
+
+    max-height:90vh;
+
+    overflow:auto;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(18px);
+
+    color:#fff;
+
+    border:1px solid rgba(255,255,255,.2);
+
+}
+
+.view-billing-modal h2{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+}
+
+.view-billing-header{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    justify-content:space-between;
+
+    margin-bottom:26px;
+
+}
+
+.view-billing-header h2{
+
+    margin:0 0 6px;
+
+    color:#fff;
+
+    font-size:24px;
+
+}
+
+.view-billing-header p{
+
+    margin:0;
+
+    color:#ddd;
+
+    font-size:14px;
+
+}
+
+.view-billing-close{
+
+    width:34px;
+
+    height:34px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:rgba(255,255,255,.08);
+
+    color:#fff;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+}
+
+.view-billing-close:hover{
+
+    background:rgba(255,255,255,.15);
+
+}
+
+
+/* =========================
+DETAILS
+========================= */
+
+.billing-details-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:18px;
+
+}
+
+.billing-details-grid > div{
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:16px;
+
+    border-radius:11px;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.billing-details-grid span{
+
+    display:block;
+
+    margin-bottom:7px;
+
+    color:#ddd;
+
+    font-size:13px;
+
+}
+
+.billing-details-grid strong{
+
+    display:block;
+
+    color:#fff;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.billing-details-grid .billing-total{
+
+    color:#60a5fa;
+
+    font-size:20px;
+
+}
+
+
+/* =========================
+STATUS
+========================= */
+
+.billing-status{
+
+    display:inline-block !important;
+
+    width:fit-content;
+
+    padding:5px 11px;
+
+    margin:0;
+
+    border-radius:999px;
+
+    font-size:12px !important;
+
+    text-transform:capitalize;
+
+}
+
+.billing-status.paid{
+
+    background:#dcfce7;
+
+    color:#15803d !important;
+
+}
+
+.billing-status.pending{
+
+    background:#fef3c7;
+
+    color:#b45309 !important;
+
+}
+
+
+/* =========================
+FOOTER
+========================= */
+
+.view-billing-footer{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    margin-top:25px;
+
+}
+
+.view-billing-footer button{
+
+    border:none;
+
+    border-radius:10px;
+
+    padding:13px 20px;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.view-billing-footer button:hover{
+
+    background:#1d4ed8;
+
+}
+
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:768px){
+
+    .billing-details-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .view-billing-modal{
+
+        padding:22px;
+
+    }
+
+}

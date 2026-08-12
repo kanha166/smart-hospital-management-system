@@ -1,0 +1,99 @@
+.medicine-table-wrapper{
+
+    overflow-x:auto;
+
+}
+
+.medicine-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+.medicine-table th{
+
+    background:rgba(255,255,255,.08);
+
+    color:#fff;
+
+    padding:16px;
+
+    text-align:left;
+
+}
+
+.medicine-table td{
+
+    padding:16px;
+
+    color:#fff;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.medicine-table tr:hover{
+
+    background:rgba(255,255,255,.05);
+
+}
+
+.actions{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.actions button{
+
+    width:38px;
+
+    height:38px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    background:rgba(255,255,255,.15);
+
+    color:#fff;
+
+    transition:.3s;
+
+}
+
+.actions button:hover{
+
+    background:#2563eb;
+
+}
+
+.medicine-table .status.active{
+
+    color:#22c55e;
+
+    font-weight:700;
+
+    background:rgba(34,197,94,.12);
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    display:inline-block;
+
+}

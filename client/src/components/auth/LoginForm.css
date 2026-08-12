@@ -1,0 +1,135 @@
+/* File: src/components/auth/LoginForm.css */
+
+.login-title {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+.login-subtitle {
+    color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-label {
+    color: white;
+    font-weight: 500;
+}
+
+/* Input */
+
+.login-input {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: white;
+    padding-right: 45px;
+}
+
+.login-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+
+.login-input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border-color: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+}
+
+.login-input:-webkit-autofill,
+.login-input:-webkit-autofill:hover,
+.login-input:-webkit-autofill:focus {
+    -webkit-text-fill-color: white;
+    transition: background-color 9999s ease-in-out 0s;
+}
+
+/* Password */
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.75);
+    cursor: pointer;
+    font-size: 18px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.password-toggle:hover {
+    color: white;
+}
+
+.password-toggle:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Button */
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    transition: all 0.3s ease;
+}
+
+.login-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.4);
+}
+
+/* Links */
+
+.forgot-link {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.register-link {
+    color: #ffd166;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link:hover {
+    color: #ffe08a;
+}
+
+.validation-error{
+    display:block;
+    color:#ffb4b4;
+    font-size:.85rem;
+    margin-top:6px;
+    margin-left:2px;
+}
+
+.is-invalid{
+    border-color:#ff6b6b !important;
+}
+
+.is-invalid:focus{
+    border-color:#ff6b6b !important;
+    box-shadow:0 0 0 0.2rem rgba(255,107,107,.25) !important;
+}

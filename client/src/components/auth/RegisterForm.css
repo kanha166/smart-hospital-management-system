@@ -1,0 +1,107 @@
+/* File: src/components/auth/RegisterForm.css */
+
+.register-title {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+.register-subtitle {
+    color: rgba(255,255,255,.75);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.register-label {
+    color: white;
+    font-weight: 500;
+}
+
+.register-input {
+    background: rgba(255,255,255,.15);
+    border: 1px solid rgba(255,255,255,.25);
+    color: white;
+}
+
+.register-input::placeholder {
+    color: rgba(255,255,255,.60);
+    font-size: 0.9rem;
+}
+
+.register-input:focus {
+    background: rgba(255,255,255,.20);
+    color: white;
+    border-color: rgba(255,255,255,.40);
+    box-shadow: 0 0 10px rgba(255,255,255,.25);
+}
+
+.register-input option {
+    color: black;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.password-toggle:hover {
+    opacity: .8;
+}
+
+.register-link {
+    color: #ffd166;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.register-link:hover {
+    color: white;
+}
+
+.register-form .login-button {
+    width: 100%;
+}
+
+.validation-error{
+    display:block;
+    color:#ffb4b4;
+    font-size:.85rem;
+    margin-top:6px;
+    margin-left:2px;
+}
+
+.is-invalid{
+    border-color:#ff6b6b !important;
+}
+
+.is-invalid:focus{
+    border-color:#ff6b6b !important;
+    box-shadow:0 0 0 .2rem rgba(255,107,107,.25) !important;
+}
+
+.password-hint{
+    display:block;
+    margin-top:8px;
+    color:rgba(255,255,255,.75);
+    font-size:.82rem;
+    line-height:1.5;
+}
+
+.validation-error{
+    display:block;
+    margin-top:5px;
+    color:#ffb3b3;
+    font-size:.82rem;
+}

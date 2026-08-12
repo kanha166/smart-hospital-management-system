@@ -1,0 +1,26 @@
+/* Color Palette */
+:root{
+
+    --primary:#2563EB;
+    --primary-hover:#1D4ED8;
+
+    --success:#16A34A;
+    --warning:#F59E0B;
+    --danger:#DC2626;
+
+    --background:#F5F7FB;
+
+    --card:#FFFFFF;
+
+    --text:#1E293B;
+
+    --text-light:#64748B;
+
+    --border:#E2E8F0;
+
+    --shadow:
+        0 8px 25px rgba(0,0,0,.08);
+
+    --radius:14px;
+
+}

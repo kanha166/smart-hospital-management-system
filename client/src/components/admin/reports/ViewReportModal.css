@@ -1,0 +1,105 @@
+.view-report-modal{
+
+    width:700px;
+
+    max-width:95%;
+
+    max-height:90vh;
+
+    overflow:auto;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(18px);
+
+    color:#fff;
+
+    border:1px solid rgba(255,255,255,.2);
+
+}
+
+.view-report-modal h2{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+}
+
+.report-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:18px;
+
+}
+
+.report-grid div{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.report-grid strong{
+
+    margin-bottom:6px;
+
+}
+
+.report-grid span{
+
+    color:#ddd;
+
+}
+
+.full-width{
+
+    grid-column:1/-1;
+
+}
+
+.close-btn{
+
+    margin-top:25px;
+
+    width:100%;
+
+    padding:13px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    font-weight:600;
+
+}
+
+.close-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+@media(max-width:768px){
+
+    .report-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

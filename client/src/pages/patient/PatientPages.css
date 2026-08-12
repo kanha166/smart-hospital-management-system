@@ -1,0 +1,429 @@
+/* =========================================================
+   PATIENT PAGES
+========================================================= */
+
+.patient-page{
+
+    max-width:900px;
+
+    margin:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+}
+
+
+.patient-profile-card{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:24px;
+
+    padding:40px;
+
+    text-align:center;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.18);
+
+}
+
+
+.patient-profile-photo{
+
+    width:170px;
+
+    height:170px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:6px solid rgba(255,255,255,.15);
+
+    margin-bottom:20px;
+
+}
+
+
+.patient-profile-card h2{
+
+    color:#fff;
+
+    margin-bottom:8px;
+
+    font-size:30px;
+
+    font-weight:700;
+
+}
+
+
+.patient-id{
+
+    color:#cbd5e1;
+
+    font-size:15px;
+
+}
+
+
+.patient-info-card{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:22px;
+
+    padding:28px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+
+.patient-info-card h3{
+
+    color:white;
+
+    margin-bottom:22px;
+
+    padding-bottom:12px;
+
+    border-bottom:1px solid rgba(255,255,255,.10);
+
+}
+
+
+.info-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:16px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+
+.info-row:last-child{
+
+    border-bottom:none;
+
+}
+
+
+.info-row span{
+
+    color:#cbd5e1;
+
+    font-size:15px;
+
+}
+
+
+.info-row strong{
+
+    color:white;
+
+    font-weight:600;
+
+}
+
+
+.patient-info-card p{
+
+    color:white;
+
+    line-height:1.7;
+
+}
+
+
+@media(max-width:768px){
+
+    .patient-profile-card{
+
+        padding:30px 20px;
+
+    }
+
+    .patient-profile-photo{
+
+        width:130px;
+
+        height:130px;
+
+    }
+
+    .info-row{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:6px;
+
+    }
+
+}
+
+/* ==========================================
+   SHARED TABLE DESIGN
+========================================== */
+
+.patient-table-card{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:22px;
+
+    padding:28px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.18);
+
+}
+
+.patient-table-card h2{
+
+    color:#fff;
+
+    margin-bottom:22px;
+
+}
+
+.patient-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.patient-table th{
+
+    color:#fff;
+
+    padding:16px;
+
+    text-align:left;
+
+    border-bottom:1px solid rgba(255,255,255,.10);
+
+}
+
+.patient-table td{
+
+    color:#fff;
+
+    padding:18px 16px;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.patient-table tr:last-child td{
+
+    border-bottom:none;
+
+}
+
+.patient-table tbody tr:hover{
+
+    background:rgba(255,255,255,.05);
+
+}
+
+
+/* ==========================================
+   STATUS BADGES
+========================================== */
+
+.badge{
+
+    display:inline-block;
+
+    padding:7px 14px;
+
+    border-radius:999px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.badge.completed{
+
+    background:#dcfce7;
+
+    color:#15803d;
+
+}
+
+.badge.pending{
+
+    background:#fef3c7;
+
+    color:#b45309;
+
+}
+
+.badge.paid{
+
+    background:#dcfce7;
+
+    color:#15803d;
+
+}
+
+.badge.unpaid{
+
+    background:#fee2e2;
+
+    color:#b91c1c;
+
+}
+
+.badge.available{
+
+    background:#dbeafe;
+
+    color:#1d4ed8;
+
+}
+
+
+/* ==========================================
+   DOWNLOAD BUTTON
+========================================== */
+
+.download-btn{
+
+    border:none;
+
+    padding:8px 18px;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.download-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+
+/* ==========================================
+   EMPTY STATE
+========================================== */
+
+.empty-state{
+
+    padding:70px;
+
+    text-align:center;
+
+    color:#94a3b8;
+
+}
+
+.small-btn{
+
+    padding:8px 14px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#2563eb;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.small-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+.patient-card h2{
+
+    margin-bottom:20px;
+
+}
+
+.patient-avatar{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#2563eb,#3b82f6);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:48px;
+    font-weight:700;
+    margin:0 auto 20px;
+    box-shadow:0 12px 30px rgba(37,99,235,.35);
+}
+
+.patient-table td:last-child {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+.patient-table td:last-child button {
+
+    margin: 0;
+
+    padding: 8px 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    transition: 0.25s;
+
+}
