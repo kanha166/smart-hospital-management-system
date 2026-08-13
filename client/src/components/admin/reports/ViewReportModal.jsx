@@ -76,7 +76,7 @@ function ViewReportModal({
 
                                         <a
 
-                                            href={`http://localhost:5000/${report.report_file}`}
+                                            href={`https://smart-hospital-api-kxep.onrender.com/${report.report_file}`}
 
                                             target="_blank"
 

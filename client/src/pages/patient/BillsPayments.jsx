@@ -43,7 +43,7 @@ export default function BillsPayments() {
 
             const profileResponse =
                 await fetch(
-                    "http://localhost:5000/api/patients/profile",
+                    "https://smart-hospital-api-kxep.onrender.com/api/patients/profile",
                     {
                         headers: {
                             Authorization:
