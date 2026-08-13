@@ -17,7 +17,6 @@ import Appointments from "../pages/admin/Appointments";
 import Pharmacy from "../pages/admin/Pharmacy";
 import Billing from "../pages/admin/Billing";
 import Reports from "../pages/admin/Reports";
-import Settings from "../pages/admin/Settings";
 
 import MyAppointments from "../pages/patient/MyAppointments";
 import MedicalReports from "../pages/patient/MedicalReports";
@@ -136,18 +135,6 @@ export default function AppRoutes() {
         <ProtectedRoute allowedRoles={["admin"]}>
             <DashboardLayout>
                 <Reports />
-            </DashboardLayout>
-        </ProtectedRoute>
-    }
-/>
-
-
-<Route
-    path="/admin/settings"
-    element={
-        <ProtectedRoute allowedRoles={["admin"]}>
-            <DashboardLayout>
-                <Settings />
             </DashboardLayout>
         </ProtectedRoute>
     }
